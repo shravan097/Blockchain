@@ -1,5 +1,6 @@
 # Blockchain
 Learning ideas of a blockchain via implementing one in C++.
+### <a href = "https://google.github.io/styleguide/cppguide.html ">C ++ Coding Style Guide</a>
 ## Things to be done:
 <ul>
   <li>Implementation of Blocks. </li>
