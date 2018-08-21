@@ -9,4 +9,5 @@ Learning ideas of a blockchain via implementing one in C++.
   <li> Addressing </li>
   <li> Decentralize Netwok (p2p) </li>
   </ul>
+## Requires Crypto++ Library to run. Download it and run '''make''' command.
   
