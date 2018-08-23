@@ -34,5 +34,6 @@
 [main]
 [blockNode]
 *.DS_Store
+*.dSYM
 
 cryptopp700/

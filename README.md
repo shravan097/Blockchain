@@ -1,6 +1,7 @@
 # Blockchain
 Learning ideas of a blockchain via implementing one in C++.
 ### <a href = "https://google.github.io/styleguide/cppguide.html ">C ++ Coding Style Guide</a>
+## Requires Crypto++ Library to run. Download it and run '''make''' command.
 ## Things to be done:
 <ul>
   <li>Implementation of Blocks. </li>
@@ -8,6 +9,6 @@ Learning ideas of a blockchain via implementing one in C++.
   <li> Transaction </li>
   <li> Addressing </li>
   <li> Decentralize Netwok (p2p) </li>
-  </ul>
-## Requires Crypto++ Library to run. Download it and run '''make''' command.
+</ul>
+
   
