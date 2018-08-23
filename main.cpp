@@ -1,37 +1,27 @@
+#include <iostream>
+#include <ctime>
+#include <iostream>
+#include<string>
+#include <functional>
+#include "blockNode.h"
 #include "blockChain.h"
 #include "cryptopp700/sha.h"
-#include <iostream>
-#define CRYPTOPP_ENABLE_NAMESPACE_WEAK 1
-#include "cryptopp700/md5.h"
-#include "cryptopp700/config.h"
-using namespace CryptoPP;
 #include "cryptopp700/hex.h"
+#define CRYPTOPP_ENABLE_NAMESPACE_WEAK 1
+
+
+using namespace CryptoPP;
 
 
 
 int main()
 {
-	BlockChain *chain = BlockChain::getInstance();
-	chain->Add();
-	chain->Add();
-	chain->Add();
-	chain->printChain();
-	byte digest[ CryptoPP::Weak::MD5::DIGESTSIZE ];
-	std::string message = "abcdefghijklmnopqrstuvwxyz";
+	BlockChain blockChain = BlockChain::getInstance();
+	blockChain.Add("I paid Alex $20!");
+	blockChain.Add("Alex paid Charlie $100");
+	blockChain.Add("Alex got 10 Coin!");
 
-	CryptoPP::Weak::MD5 hash;
-	hash.CalculateDigest( digest, (const byte*)message.c_str(), message.length() );
-
-	CryptoPP::HexEncoder encoder;
-	std::string output;
-
-	encoder.Attach( new CryptoPP::StringSink( output ) );
-	encoder.Put( digest, sizeof(digest) );
-	encoder.MessageEnd();
-
-	std::cout << output << std::endl;
-
-
-
+	blockChain.printChain();
 
 }
+
