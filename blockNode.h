@@ -33,6 +33,11 @@ class Block
 		std::string GetHash() const {return m_hash;}
 		int GetNonce() const {return m_nonce;}
 
+		void SetHash(const std::string& hash){this->m_hash = hash;}
+		void SetNonce(const int & nonce) {this->m_nonce = nonce;}
+
+
+
 
 	private: 
 		int m_id;
